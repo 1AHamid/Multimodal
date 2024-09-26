@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Content section */
+.content {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px; /* Adjusted for better readability */
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2; /* Keeps it above the image */
+}
+
+/* Centered and resized image styling */
+.image-wrapper {
+    position: relative;
+    width: 80%; /* Centering the image */
+    margin: 0 auto; /* Centers the image wrapper */
+    height: auto; /* Allows height to adjust based on the image */
+}
+
+.image-wrapper img {
+    width: 100%; /* Makes the image fill the wrapper width */
+    height: auto; /* Keeps the image's aspect ratio */
+    max-height: 60vh; /* Limits the max height to ensure the full image displays */
+    object-fit: contain; /* Ensures the entire image is visible */
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+}
+
+/* Expanded Paragraph Styling */
+h2 {
+    font-size: 2rem;
+    color: #0044cc;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
